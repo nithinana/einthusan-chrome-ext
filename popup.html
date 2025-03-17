@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Einthusan Extractor</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster&display=swap">
+    <link rel="stylesheet" type="text/css" href="css/popup.css">
+</head>
+<body>
+    
+    <h1 class="title">Einthusan</h1>
+    
+    <button id="extract" class="extract">Extract</button>
+    <button id="download" class="download">Download</button>
+    
+    <!-- Dark mode toggle -->
+    <label class="switch">
+        <input type="checkbox" id="mode-toggle">
+        <span class="slider round"></span>
+    </label>
+
+    <script src="js/popup.js"></script>
+    <script>
+        document.getElementById('mode-toggle').addEventListener('change', function() {
+            document.body.classList.toggle('dark-mode');
+        });
+    </script>
+
+</body>
+</html>

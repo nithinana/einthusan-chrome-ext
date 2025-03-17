@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "Einthusan Extractor",
+  "version": "1.0",
+  "permissions": ["scripting", "storage", "downloads", "activeTab"],
+  "host_permissions": ["*://*.einthusan.io/*"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html"
+  }
+}
